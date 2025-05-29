@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
-import Landing from "./pages/Landing";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import { Loader2 } from "lucide-react";
 
@@ -36,8 +35,8 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/voice" />} />
-      <Route path="/voice" element={<Landing />} />
+      <Route path="/" element={<Navigate to="/voice/login" />} />
+      <Route path="/voice" element={<Navigate to="/voice/login" />} />
       <Route path="/voice/login" element={<Login />} />
       <Route 
         path="/voice/dashboard" 
