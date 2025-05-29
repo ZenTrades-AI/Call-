@@ -30,7 +30,7 @@ const LoginForm = () => {
       const success = await login(email, password);
       if (success) {
         // Redirect directly to dashboard on successful login
-        navigate("/voice/dashboard");
+        navigate("/dashboard");
       } else {
         // Login function already shows error toast
         setIsLoading(false);
