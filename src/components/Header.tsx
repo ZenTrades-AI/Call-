@@ -22,9 +22,9 @@ const Header = () => {
           className="rounded-full bg-gradient-to-r from-purple-600 to-purple-400 hover:from-purple-700 hover:to-purple-500 text-white px-6"
         >
           {isAuthenticated ? (
-            <Link to="/voice/dashboard">Dashboard</Link>
+            <Link to="/dashboard">Dashboard</Link>
           ) : (
-            <Link to="/voice/login">Log In</Link>
+            <Link to="/login">Log In</Link>
           )}
         </Button>
       </div>
